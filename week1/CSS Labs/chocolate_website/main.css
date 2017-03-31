@@ -1,13 +1,20 @@
+.parallax { 
+	background-image: url("http://ichef.bbci.co.uk/images/ic/1600xn/p03m9j90.jpg");
+	height: 100vh 100vw; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+div {
+	padding:30px;
+}
 body {
 	font-family: sans-serif;
-	padding:30px;
-	background-image: url("http://ichef.bbci.co.uk/images/ic/1600xn/p03m9j90.jpg");
-	background:#361001;
 	color:#C6BBBD;
 }
 p {
-	background: #814935;
-	background-opacity:.5;
+	background:#814935;
 }
 ul {
 	background:#814935;
@@ -16,7 +23,7 @@ ul {
 	color:rgb(244,214,167);
 }
 #cupcake {
-	color:rgb();
+	color:;
 }
 #carrot-cake {
 	color:#711F00;
