@@ -11,6 +11,8 @@ div {
 }
 body {
 	font-family: sans-serif;
+	padding:30px;
+	background:#361001;
 	color:#C6BBBD;
 }
 p {
