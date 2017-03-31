@@ -1,0 +1,23 @@
+body {
+	font-family: sans-serif;
+	padding:30px;
+	background-image: url("http://ichef.bbci.co.uk/images/ic/1600xn/p03m9j90.jpg");
+	background:#361001;
+	color:#C6BBBD;
+}
+p {
+	background: #814935;
+	background-opacity:.5;
+}
+ul {
+	background:#814935;
+}
+.header {
+	color:rgb(244,214,167);
+}
+#cupcake {
+	color:rgb();
+}
+#carrot-cake {
+	color:#711F00;
+}
