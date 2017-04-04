@@ -1,0 +1,24 @@
+body {
+	font-family:georgia;
+	padding: 50px;
+	line-height: 150%;
+}
+.header-footer {
+	text-align: center;
+	line-height: 150%;
+}
+#developer-life {
+	letter-spacing: 2px;
+}
+.headers {
+	font-family: helvetica;
+}
+a:link, a:hover, a:visited {
+	color: black;
+	font-weight: bold;
+	font-family:helvetica;
+}
+a:active {
+	text-decoration: none;
+	font-style: italic;
+}
