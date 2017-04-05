@@ -1,0 +1,28 @@
+body {
+	background: transparent
+	url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Boston_Skyline%2C_as_Seen_From_Cambridge.JPG/1920px-Boston_Skyline%2C_as_Seen_From_Cambridge.JPG");
+	background-size: 100% 100%;
+	background-repeat: none;
+}
+
+body {
+	background: transparent
+	url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Boston_Skyline%2C_as_Seen_From_Cambridge.JPG/1920px-Boston_Skyline%2C_as_Seen_From_Cambridge.JPG") no-repeat
+	background-size: none;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display:inline;
+}
+
+.logo{
+	width:200px;
+}
+
+.main-content {
+	background: rgba(255, 255, 255, 0.5);
+}
