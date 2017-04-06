@@ -1,7 +1,15 @@
+header, footer {
+	text-align: center;
+	line-height: 150%;
+}
 body {
 	font-family:georgia;
 	padding: 50px;
 	line-height: 150%;
+	font-size: 16px;
+}
+.main-content {
+	padding: 30px;
 }
 h4 {
 	letter-spacing: 2px;
@@ -9,9 +17,9 @@ h4 {
 .headers {
 	font-family: helvetica;
 }
-.header-footer {
-	text-align: center;
-	line-height: 150%;
+.hr-headings { 
+   border: none;
+   height: 10px;
 }
 #developer-life {
 	letter-spacing: 2px;
@@ -25,14 +33,24 @@ a:active {
 	text-decoration: none;
 	font-style: italic;
 }
-.deliverables {
+img {
 	border: black 1px;
 	border-style: solid;
 	padding: 3px;
+	margin: 10px;
+}
+.center-images {
+	text-align: center;
 }
 .exp-main {
 	font-family:helvetica;
 }
 .exp-desc {
    list-style-type: none; 
+}
+ul {
+	list-style: square;
+}
+#guy {
+	float: right;
 }
