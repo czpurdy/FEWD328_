@@ -1,0 +1,49 @@
+main {
+	box-sizing: border-box;
+	padding: 50px;
+	background: beige;
+}
+
+header {
+	background: pink;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+nav > ul {
+	list-style: none;
+}
+
+nav > ul > li {
+	display: inline;
+	padding-right: 10px;
+}
+
+nav > ul li a {
+	color: #ff0;
+}
+
+.main-content {
+	width: 50%;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0;
+	background: lightgreen;
+	padding: 10px;
+}
+
+.sidebar-content {
+	width: 50%;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 10px;
+	background: teal;
+	float: right;
+}
+
+footer {
+	background: darkblue;
+}

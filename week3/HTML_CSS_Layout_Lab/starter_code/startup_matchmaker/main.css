@@ -1,0 +1,42 @@
+header {
+	background: black;
+	color: yellow;
+	padding: 5px;
+}
+ul {
+	color: white;
+	list-style: none;
+}
+ul.find-links {
+	text-transform: uppercase;
+}
+ul.page-links {
+	font-family: helvetica;
+}
+span.strikethrough {
+	text-decoration: line-through;
+}
+span.underline {
+	text-decoration: underline;
+}
+#gray-header {
+	background: gray;
+	margin: 5px;
+}
+
+header {
+   -webkit-animation-name: header-rainbow; 
+   -webkit-animation-duration: 10s; 
+   animation-name: header-rainbow;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes header-rainbow {
+    0%   {background-color: red;}
+    20%  {background-color: orange;}
+    40%  {background-color: yellow;}
+    60%  {background-color: green;}
+    80%  {background-color: blue;}
+    100% {background-color: purple;}
+}
