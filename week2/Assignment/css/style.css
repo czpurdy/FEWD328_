@@ -49,9 +49,7 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
-     background: url() no-repeat center top rgb(134,141,157);
-      background-size: cover;
+     font-family: sans-serif;
 }
 
 /* Button styles -- basic */
@@ -137,6 +135,13 @@ article.benefits {
 p.benefits-content {
   font-size: 13px;
   font-weight: 300;
+  color: #606161;
+}
+
+ul.benefits-content-list {
+  list-style-type: circle;
+  list-style: black;
+  margin-left: 15px;
 }
 
 /*Testimonials section*/
