@@ -69,8 +69,9 @@ a {
 
 }
 
+ /* It took me SO LONG to figure out that the black line on the left side of the header background is a part of the native image. It made me sad :( */
 header {
-  background: url("../images/header_bg.jpg") no-repeat left top rgb(134,141,157);
+  background: url("../images/header_bg.jpg") no-repeat rgb(134,141,157);
   background-size: cover;
   padding-left: 50px;
   padding-right: 50px;
@@ -91,12 +92,6 @@ h1 {
   font-size: 24px;
   font-weight: 900;
   color: white;
-}
-
-/* Need to add margin or padding */
-h1.relaxr-header {
-  margin-top: 20;
-  margin-left: 50;
 }
 
 h2 {
@@ -121,7 +116,7 @@ a.get-button {
   text-align: center;
   background-color: #f9e42e;
   color: #033048;
-  padding: 10px;
+  padding: 8px;
   margin: auto;
   border-radius: 5px;
   font-size: 14px;
@@ -131,7 +126,7 @@ a.get-button {
 
 div.get-button {
   padding-top: 15px;
-  padding-bottom: 150px;
+  padding-bottom: 125px;
 }
 
 /* Benefits section */
@@ -141,10 +136,13 @@ section.benefits {
   padding: 40px;
 }
 
+  /* Decided to use a percentage for padding so this section would be more dynamic/responsive to browser changes */
 div.benefits {
   width: 320px;
+  padding-left: 8%;
 }
 
+  /* Benefits content */
 p#benefits-content {
   font-size: 13px;
   font-weight: 300;
@@ -153,6 +151,7 @@ p#benefits-content {
   padding-left: 5px;
 }
 
+  /* Benefits list */
 ul.benefits-content-list {
   list-style: black;
   margin-left: 25px;
@@ -161,6 +160,7 @@ ul.benefits-content-list {
   width: 240px;
 }
 
+  /* Benefits list bullets */
 span.benefits-list-bullet {
   font-weight: 600;
 }
@@ -179,7 +179,7 @@ div.testimonials {
 }
   /* Would it be better to use a max width or just set the width for a more responsive design? */
 
-/*Testimonials content - colors don't totally match the deliverable, but I'm not sure if that's due to the picture quality. I tried using the light gray color but it was still too dark.*/
+  /*Testimonials content - colors don't totally match the deliverable, but I'm not sure if that's due to the picture quality. I tried using the light gray color but it was still too dark.*/
 blockquote.testimonials-content {
   text-align: center;
   font-weight: 300;
@@ -199,17 +199,18 @@ section.sign-up {
   padding: 15px;
 }
 
-/* Sign up button */
-a > div.sign-up-button {
+  /* Sign up button */
+a.sign-up-button {
   background-color: #033048;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
   margin: auto;
-  width: 150px;
+  width: 180px;
   border-radius: 5px;
   font-size: 12px;
   font-weight: 800;
+  display: block;
 }
 
 /* Footer */
@@ -218,14 +219,14 @@ h1.relaxr-footer {
   padding: 30px;
 }
 
-/*Social Media logos*/
+  /*Social Media logos*/
 img.social-icons {
   height: 20px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* Copyright Info */
+  /* Copyright Info */
 p.copyright-footer {
   padding: 15px;
   padding-top: 30px;

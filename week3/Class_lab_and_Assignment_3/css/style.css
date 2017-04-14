@@ -70,11 +70,12 @@ a {
 }
 
 header {
-  background: url("../images/header_bg.jpg") no-repeat left top rgb(134,141,157);
+  background: #033048;
   background-size: cover;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 footer {
@@ -93,12 +94,6 @@ h1 {
   color: white;
 }
 
-/* Need to add margin or padding */
-h1.relaxr-header {
-  margin-top: 20;
-  margin-left: 50;
-}
-
 h2 {
   font-size: 24px;
   font-weight: 600;
@@ -114,6 +109,16 @@ h3 {
   margin-bottom: 10px;
 }
 
+/* Navigation */
+a.nav {
+  color: #f9e42e;
+}
+
+li.nav {
+  display: inline;
+  text-align: right;
+  float: right;
+}
 
 /* Get it Now button */
 a.get-button {
