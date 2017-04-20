@@ -1,0 +1,19 @@
+Instructions for our Thermostat
+1. Store the target temperature in X
+2. Set X equal to 72
+3. Get the temperature
+4. Store the temperature in a variable t
+5. If the value of T is less than X, turn on the heater.
+6. If the value of T is greater than or equal to X, turn off the heater.
+7. Repeat steps 3 through 6 indefinitely.
+
+get x
+x = 72
+repeat forever
+get T
+T = get_sensor_reading
+if X < T
+turn_on_heater
+if X > T
+turn_off_heater
+end of repeating code 

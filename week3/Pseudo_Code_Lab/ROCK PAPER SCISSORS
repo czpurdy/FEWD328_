@@ -1,0 +1,42 @@
+ROCK PAPER SCISSORS
+1. Take in one of three choices from two players
+2. Know which is value (r,p or s) are greater than the other
+3. Check the values given by the players
+4. See if one is greater or they match
+5. Either tell which player won or if they match and should play again
+
+define players P1 and P2
+(prompt) get X and Y from players
+(choice) store X and Y
+
+store/set
+R = rock
+P = paper
+S = scissors
+	R > S
+	R < P
+	R = R
+	P > R
+	P < S
+	P = P
+	S > P
+	S < R
+	S = S
+
+check X and Y
+if X > Y, then P1 wins
+if X < Y, then P2 wins
+if X = Y, then tie, repeat
+
+
+if X = R and Y = R, then P1 and P2 tie, REPEAT
+if X = P and Y = P, then P1 and P2 tie, REPEAT
+if X = S and Y = S, then P1 and P2 tie, REPEAT
+if X = R and Y = S, then P1 WINS
+if X = P and Y = R, then P1 WINS
+if X = S and Y = P, then P1 WINS
+if X = R and Y = P, then P2 WINS
+if X = P and Y = S, then P2 WINS
+if X = S and Y = R, then P2 WINS
+
+

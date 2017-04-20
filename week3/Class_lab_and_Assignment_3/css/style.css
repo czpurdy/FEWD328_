@@ -50,13 +50,12 @@ body {
      font-size: 12px;
      line-height: 1.4;
      font-family: 'Open Sans', sans-serif;
+     background: #f0efef;
 }
 
-/* Button styles -- basic */
-a {
-  text-decoration: none;
-  text-align: center;
-}
+
+/* I know this is the wrong font family, but I'm not sure which it is! Will change later if I can */
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -66,7 +65,6 @@ a {
   width: 100%;
   margin: auto;
   height: 500px;
-
 }
 
 header {
@@ -104,114 +102,130 @@ h2 {
 }
 
 h3 {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #033048;
+}
+
+h4 {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #033048;
+}
+
+p {
+  color: #606161;
+}
+
+a {
+  color: #033048;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* Navigation */
+  /* Struggling to add padding and keep horizontally center */
 a.nav {
   color: #f9e42e;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  margin: 0;
 }
 
-li.nav {
-  display: inline;
-  text-align: right;
+nav > ul > li {
   float: right;
 }
 
-/* Get it Now button */
-a.get-button {
-  width: 180px;
-  text-align: center;
-  background-color: #f9e42e;
+/* Main Content - Flexbox Div */
+
+.flexbox-div {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  padding: 50px;
+  width: 100%;
+}
+
+.flexbox-div > section {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.flexbox-div > section.articles {
+  width: 70%;
+}
+
+.flexbox-div > section.aside {
+  width: 30%;
+}
+
+  /* Article Content */
+article > img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+  /* it took *so long* to figure out how to align this properly */
+  /* also struggled trying to only make the text a link instead of the whole section */
+article > a {
+  font-weight: bold;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #033048;
-  padding: 10px;
-  margin: auto;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 800;
-  display: block;
+}
+  
+  /* struggle bus city trying to fix the weird spacing issue here */
+article > p:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 35px;
 }
 
-div.get-button {
-  padding-top: 15px;
-  padding-bottom: 150px;
+  /* Aside Content */
+aside {
+  padding-bottom: 25px;
 }
 
-/* Benefits section */
-section.benefits {
-  background-color: #f0efef;
-  color: #033048;
-  padding: 40px;
-}
-
-div.benefits {
-  width: 320px;
-}
-
-p#benefits-content {
-  font-size: 13px;
-  font-weight: 300;
-  color: #606161;
-  width: 340px; 
+aside > ul {
   padding-left: 5px;
 }
 
-ul.benefits-content-list {
-  list-style: black;
-  margin-left: 25px;
-  margin-top: 25px;
-  list-style-position: inside;
-  width: 240px;
+aside > a {
+  font-weight: bold;
 }
 
-span.benefits-list-bullet {
-  font-weight: 600;
-}
-
-/*Testimonials section*/
-section.testimonials-section {
-  background: url(../images/testimonial_bg.jpg) no-repeat center;
-  background-size: cover;
-  color: white;
-}
-
-div.testimonials {
-  width: 350px;
-  margin: auto;
-  padding: 30px;
-}
-  /* Would it be better to use a max width or just set the width for a more responsive design? */
-
-/*Testimonials content - colors don't totally match the deliverable, but I'm not sure if that's due to the picture quality. I tried using the light gray color but it was still too dark.*/
-blockquote.testimonials-content {
+  /* Ad Space */
+div.ad-space {
+  background: white;
   text-align: center;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 18px;
-}
-
-span.testimonials-content-name {
-  font-weight: 600;
-  font-style: normal;
-  padding: 20px;
+  width: 100%;
+  height: 300px;
+  color: black;
+  padding: 0 0 10px 10px;
 }
 
 /* Sign up section */
 section.sign-up {
   background-color: #f9e42e;
-  padding: 15px;
+  text-align: center;
+  padding: 25px;
 }
 
 /* Sign up button */
-a > div.sign-up-button {
+a.sign-up-button {
   background-color: #033048;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 10px 40px 10px 40px;
   margin: auto;
-  width: 150px;
   border-radius: 5px;
   font-size: 12px;
   font-weight: 800;
@@ -234,4 +248,5 @@ img.social-icons {
 p.copyright-footer {
   padding: 15px;
   padding-top: 30px;
+  color: white;
 }
