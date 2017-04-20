@@ -172,6 +172,7 @@ article > img {
 
   /* it took *so long* to figure out how to align this properly */
   /* also struggled trying to only make the text a link instead of the whole section */
+  /* flex may be problem, but I don't know how to properly align without it */
 article > a {
   font-weight: bold;
   text-align: right;
