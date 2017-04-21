@@ -221,7 +221,7 @@ section.sign-up {
 }
 
 /* Sign up button */
-a.sign-up-button {
+section.sign-up > div > a {
   background-color: #033048;
   color: white;
   text-align: center;
