@@ -1,0 +1,46 @@
+header {
+	background: #656565;
+	color: #e3ebeb;
+	height: 120px;
+	text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer {
+	background: #656565;
+	color: #e3ebeb;
+	height: 50px;
+	padding-top: 30px;
+}
+
+h1.title {
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+	color: #f0ffd3;
+	padding-top: 30px;
+	float: center;
+	position: relative;
+}
+
+#logo {
+	float: left;
+	position: relative;
+	height: 100px;
+	padding: 5px 0 0 10px;
+}
+
+#cityContainer {
+    padding: 100px; 
+    font-size: 54px;
+    font-weight: bold;
+}
+
+#timeContainer {
+    font-size: 42px;
+    padding: 65px;
+}
