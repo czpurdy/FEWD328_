@@ -18,6 +18,29 @@ footer {
 	padding-top: 30px;
 }
 
+a {
+	text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+.container {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -30px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/1/17/BlankMap-World-noborders.png) no-repeat center;
+  background-size: cover;
+  /* temporary background until I figure out the time zone API */
+}
+.container:after {
+  content: "";
+  display: block;
+}
+.footer, .container:after {
+  height: 30px; 
+}
+
 h1.title {
 	font-family: 'Pacifico', cursive;
 	font-size: 4em;
@@ -25,6 +48,7 @@ h1.title {
 	padding-top: 30px;
 	float: center;
 	position: relative;
+	/* need to fix the position so this title is actually centered -- right now the logo is pushing it slightly to the right */
 }
 
 #logo {
@@ -35,12 +59,56 @@ h1.title {
 }
 
 #cityContainer {
-    padding: 100px; 
-    font-size: 54px;
+    padding: 100px 0 0 10px; 
+    font-size: 3em;
     font-weight: bold;
 }
 
 #timeContainer {
-    font-size: 42px;
-    padding: 65px;
+    font-size: 2.5em;
+    padding: 10px;
 }
+
+.drink-suggest {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row; /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
+   padding: 100px;
+}
+
+.flexdrink {
+   background: #DFB5A7;
+   color: #414141;
+   border: #4f5656 solid 3px;
+   width: 250px;
+   height: 300px;
+   padding: 10px;
+   margin: auto;
+}
+
+.placeholder-div {
+	align-items: center;
+	height: 200px;
+}
+
+h2.drink-name {
+	font-size: 1.5em;
+	padding-bottom: 10px;
+}
+
+.recipe-button {
+	background: #656565;
+	color: #e3ebeb;
+	border: #f0ffd3 0px solid;
+	border-radius: 5px;
+ 	padding: 10px 0;
+ 	width: 150px;
+ 	text-align: center;
+ 	display: block;
+ 	margin: 0 auto;
+ }
