@@ -1,9 +1,23 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
-  findTimezone();
-  window.setInterval(function(){
+$(document).ready(function() { 
     findTimezone();
-  }, 1000);
-});
+    window.setInterval(function(){
+      findTimezone();
+    }, 1000);
+
+/* make it so only one card can be flipped at a time */
+
+  var enlarged = false;
+
+  $(".flip").flip({
+    trigger: 'click'
+  });//end flip
+
+  $(".flip").on("click", function(){
+      $(".front").toggleClass("expand");
+      console.log("hello a click");
+})
+
+});//end doc ready
 
 const targetHour = 17;
 var cities = new Array();

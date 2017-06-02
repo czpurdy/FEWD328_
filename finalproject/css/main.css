@@ -1,12 +1,13 @@
 header {
-	background: #656565;
+	background: url(https://images.unsplash.com/photo-1482349212652-744925892164?dpr=2&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=&bg=b) no-repeat; 
 	color: #e3ebeb;
 	height: 120px;
 	text-align: center;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-align: center;
 }
@@ -42,7 +43,8 @@ html, body {
 }
 
 h1.title {
-	font-family: 'Pacifico', cursive;
+	/*font-family: 'Pacifico', cursive;*/
+	font-family: 'Lobster', cursive;
 	font-size: 4em;
 	color: #f0ffd3;
 	padding-top: 30px;
@@ -82,26 +84,65 @@ h1.title {
 }
 
 .flexdrink {
-   background: #DFB5A7;
-   color: #414141;
+   /*background: #DFB5A7;*/
+   /*color: #414141;*/
    border: #4f5656 solid 3px;
-   width: 250px;
-   height: 300px;
-   padding: 10px;
-   margin: auto;
-}
-
-.placeholder-div {
-	align-items: center;
-	height: 200px;
+   width: 200px;
+   margin: 0 auto; 
+   background: #414141;
+   color: #e3ebeb;
 }
 
 h2.drink-name {
 	font-size: 1.5em;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
+	font-weight: 700;
+	padding: 20px;
 }
 
-.recipe-button {
+.drink-image {
+	width: 200px;
+	border: #4f5656 2px solid;
+	/*margin: 10px;*/
+}
+
+.front {
+	background: #656565;
+	color: #e3ebeb;
+	height:200px;
+	width:200px;
+	-webkit-transition: width 2s;
+	transition: width 2s;
+}
+
+.back {
+	/*height:200px;
+	width:200px;
+	-webkit-transition: width 2s;
+	transition: width 2s;*/
+
+	/* webkit transitions
+
+	css transition - resize (shrink class - toggleClass in JS) */
+}
+
+.front.expand {
+	width: 400px;
+}
+
+h3.ingredients-heading, h3.directions-heading {
+	font-size: 1.2em;
+	text-align: left;
+	font-weight: 600;
+}
+
+.ingredients, .directions {
+	font-size: 1em;
+	text-align: left;
+	padding: 10px;
+}
+
+/*.recipe-button {
 	background: #656565;
 	color: #e3ebeb;
 	border: #f0ffd3 0px solid;
@@ -111,4 +152,4 @@ h2.drink-name {
  	text-align: center;
  	display: block;
  	margin: 0 auto;
- }
+ }*/
