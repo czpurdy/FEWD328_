@@ -60,6 +60,14 @@ h1.title {
 	padding: 5px 0 0 10px;
 }
 
+#map {
+	height: 100vh;
+	width: 100%;
+	/*min-height: 100%;*/
+	/* equal to footer height */
+	/*margin-bottom: -30px;*/
+}
+
 #cityContainer {
     padding: 100px 0 0 10px; 
     font-size: 3em;
