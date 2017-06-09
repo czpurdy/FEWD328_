@@ -46,7 +46,12 @@ cities[-7]  = {  name: "Ciudad Juárez, Chihuahua (Mexico)",
               };
 cities[-6]  = {  name: "Toronto, Ontario (Canada)",
                  lat: 43.653226,
-                 lng: -79.383184};
+                 lng: -79.383184,
+                 drinks: {    name: "Toronto Cocktail",
+                              image: "toronto.jpg",
+                              ingredients: ["Canadian blended whiskey, 1 3/4 fl oz", "Fernet Branca, 1/4 fl oz", "Sugar syrup (2 parts sugar to 1 part water), 1/4 fl oz", "Angostura Aromatic Bitters, 1 dash", "Ice"],
+                              directions: ["Stir all igredients with ice", "Strain into chilled glass and serve"]}
+              };
 cities[-5]  = {  name: "Lima, Peru",
                  lat: -12.272096,
                  lng: -76.271083};
@@ -56,7 +61,8 @@ cities[-4]  = {  name: "New York, New York (USA)",
                  drinks: {   name: "Manhattan",
                               image: "manhattan.jpg", 
                               ingredients:["Sweet vermouth, 3/4 oz", "Bourbon whiskey, 2 1/2 oz", "Angostura® bitters, 1 dash", "Maraschino cherry", "Orange peel, 1 twist", "Ice, 2-3 cubes"],
-                              directions: ["Combine the vermouth, bourbon whiskey, and bitters over ice in mixing glass; stir gently", "Place the cherry in a chilled cocktail glass and strain the whiskey mixture over the cherry", "Rub the cut edge of the orange peel over the rim of the glass and twist it over the drink to release the oils but don't drop it in"]}};
+                              directions: ["Combine liquids over ice in mixing glass; stir gently", "Place cherry in a chilled cocktail glass and strain mixture over cherry", "Rub cut edge of orange peel over the rim of glass and twist it over the drink to release oils"]}
+                          };
 cities[-3]  = {  name: "Buenos Aires, Argentina",
                  lat: -34.603684,
                  lng: -58.381559,
@@ -67,7 +73,7 @@ cities[-3]  = {  name: "Buenos Aires, Argentina",
 cities[-2]  = {  name: "Atlantic Ocean",
                  lat: 40.314389,
                  lng: -40.779151,
-                 drinks: {   name: "Water",
+                 drinks: {   name: "Seawater",
                               image: "seawater.jpg", 
                               ingredients:["Seawater, 8 oz"],
                               directions: ["Place seawater in recepticle", "Serve at sea temperature"]}
@@ -78,10 +84,10 @@ cities[-1]  = {  name: "Praia, Cape Verde",
 cities[0]   = {  name: "London, England",
                  lat: 51.507351,
                  lng: -0.127758,
-                 drinks: {   name: "Gin & Tonic", 
+                 drinks: {   name: "Tom Collins", 
                               image: "tomcollins.jpg",
-                              ingredients:["lime", "gin","tonic"],
-                              directions: ["Mix shit"]}
+                              ingredients:["Gin, 2 fl oz", "Club soda, 2 fl oz","Lemon juice, 1.5 tbsp", "Simple syrup, 1 tbsp", "Lemon, 1 wedge", "Ice, 1 cup"],
+                              directions: ["Combine gin, lemon juice, and simple syrup in a cocktail shaker", "Add 1 cup ice, cover and shake until chilled", "Strain into the chilled Collins glass", "Top with club soda and garnish with a lemon wedge"]}
               };
 cities[1]   = {  name: "Berlin, Germany",
                  lat: 52.520007,

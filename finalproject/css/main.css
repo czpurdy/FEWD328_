@@ -30,9 +30,9 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -30px;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/1/17/BlankMap-World-noborders.png) no-repeat center;
-  background-size: cover;
   /* temporary background until I figure out the time zone API */
+  /*background: url(https://upload.wikimedia.org/wikipedia/commons/1/17/BlankMap-World-noborders.png) no-repeat center;*/
+  /*background-size: cover;*/
 }
 .container:after {
   content: "";
@@ -68,15 +68,19 @@ h1.title {
 	/*margin-bottom: -30px;*/
 }
 
+#city-time-container {
+	background: rgba(209, 225, 214, 0.7);
+}
+
 #cityContainer {
-    padding: 100px 0 0 10px; 
+    padding: 50px 10px 0 10px; 
     font-size: 3em;
     font-weight: bold;
 }
 
 #timeContainer {
     font-size: 2.5em;
-    padding: 10px;
+    padding: 10px 10px 50px 10px; 
 }
 
 .drink-suggest {
@@ -89,6 +93,7 @@ h1.title {
    -webkit-justify-content: space-around;
    justify-content: space-around;
    padding: 100px;
+   display: none;
 }
 
 .flexdrink {
