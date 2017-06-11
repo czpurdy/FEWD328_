@@ -16,7 +16,7 @@ cities[-12] = {  name: "Pacific Ocean",
                  lng: -177.245679,
                  drinks: {   name: "Seawater",
                               image: "seawater.jpg", 
-                              ingredients:["Seawater, 8 oz"],
+                              ingredients:["50% Sea", "50% Water"],
                               directions: ["Place seawater in recepticle", "Serve at sea temperature"]}
               };
 cities[-11] = {  name: "Pago Pago, American Samoa",
@@ -75,7 +75,7 @@ cities[-2]  = {  name: "Atlantic Ocean",
                  lng: -40.779151,
                  drinks: {   name: "Seawater",
                               image: "seawater.jpg", 
-                              ingredients:["Seawater, 8 oz"],
+                              ingredients:["50% Sea", "50% Water"],
                               directions: ["Place seawater in recepticle", "Serve at sea temperature"]}
               };
 cities[-1]  = {  name: "Praia, Cape Verde",
