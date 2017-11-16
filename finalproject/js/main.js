@@ -11,6 +11,7 @@ $(document).ready(function() {
 
 const targetHour = 17;
 var cities = [];
+
 cities[-12] = { name: "Pacific Ocean",
                 lat: 22.202705,
                 lng: -177.245679,
